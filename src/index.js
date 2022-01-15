@@ -1,10 +1,10 @@
 /**
  * Using redux default store
  */
-import store from "./store";
-import { bugAdded, bugRemoved, bugResolved } from "./actions";
+import configureStore from "./store/configureStore";
+import { bugAdded, bugRemoved, bugResolved } from "./store/bugs";
 
-// console.log(store.getState());
+const store = configureStore();
 
 const unsubscribe = store.subscribe(() => {
   console.log("Store changed", store.getState());
