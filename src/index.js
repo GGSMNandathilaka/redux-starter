@@ -20,16 +20,16 @@ const unsubscribe = store.subscribe(() => {
 });
 
 store.dispatch(userAdded({ name: "John Doe" }));
-store.dispatch(userAdded({ name: "Mark Doe" }));
-store.dispatch(userAdded({ name: "Jessy Doe" }));
-store.dispatch(bugAdded({ description: "Bug 1" }));
-store.dispatch(bugAdded({ description: "Bug 2" }));
-store.dispatch(bugAdded({ description: "Bug 3" }));
-store.dispatch(bugAssignedToUser({ bugId: 1, userId: 1 }));
-store.dispatch(bugAssignedToUser({ bugId: 2, userId: 2 }));
-store.dispatch(bugAssignedToUser({ bugId: 3, userId: 3 }));
-store.dispatch(bugResolved({ id: 1 }));
-store.dispatch(projectAdded({ name: "Project 1" }));
+// store.dispatch(userAdded({ name: "Mark Doe" }));
+// store.dispatch(userAdded({ name: "Jessy Doe" }));
+// store.dispatch(bugAdded({ description: "Bug 1" }));
+// store.dispatch(bugAdded({ description: "Bug 2" }));
+// store.dispatch(bugAdded({ description: "Bug 3" }));
+// store.dispatch(bugAssignedToUser({ bugId: 1, userId: 1 }));
+// store.dispatch(bugAssignedToUser({ bugId: 2, userId: 2 }));
+// store.dispatch(bugAssignedToUser({ bugId: 3, userId: 3 }));
+// store.dispatch(bugResolved({ id: 1 }));
+// store.dispatch(projectAdded({ name: "Project 1" }));
 
 // const unresolvedBugs = getUnresolvedBugs(store.getState());
 // console.log("Unresolved bugs:", unresolvedBugs);
